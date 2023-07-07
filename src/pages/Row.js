@@ -104,23 +104,18 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       {selectedMovie && (
         <div className="row__details">
-          <>
-            <h3 className="row__detailsTitle">{selectedMovie.title}</h3>
-            <p className="row__detailsOverview">{selectedMovie.overview}</p>
-          </>
+          <h3 className="row__detailsTitle">{selectedMovie.title}</h3>
+          <p className="row__detailsOverview">{selectedMovie.overview}</p>
         </div>
       )}
 
       {selectedTrailer && (
         <div className="youtube-player">
-          <>
-            <h3 className="row__detailsTitle">{selectedMovie.title}</h3>
-            <Youtube
-              videoId={selectedTrailer}
-              opts={opts}
-              ref={playerRef} // Référence au lecteur vidéo
-            />
-          </>
+          <Youtube
+            videoId={selectedTrailer}
+            opts={opts}
+            ref={playerRef} // Référence au lecteur vidéo
+          />
         </div>
       )}
     </div>
