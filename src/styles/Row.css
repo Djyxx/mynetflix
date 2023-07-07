@@ -28,8 +28,17 @@
 
 .row__posterLarge {
   max-height: 250px;
+  margin-bottom: 10px;
 }
 
 .row__posterLarge:hover {
   transform: scale(1.09);
+}
+
+.row__detailsTitle {
+  margin-bottom: 10px;
+}
+
+.space {
+  height: 10px; /* Ajustez la hauteur selon vos besoins */
 }
